@@ -1,0 +1,9 @@
+function countwords(passage) {
+  var count = 0;
+  for (var i = 0; i < passage.length; i++) {
+    if (passage[i] == " " && passage[i - 1] != " ") {
+      count++
+    }
+  }
+   return count
+}
